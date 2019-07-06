@@ -23,10 +23,10 @@
             "otherEntityName": "invoice",
             "otherEntityRelationshipName": "shipment",
             "relationshipName": "invoice",
-            "otherEntityField": "code"
+            "otherEntityField": "id"
         }
     ],
-    "changelogDate": "20190706094135",
+    "changelogDate": "20190706100433",
     "entityTableName": "shipment",
     "dto": "no",
     "pagination": "pagination",

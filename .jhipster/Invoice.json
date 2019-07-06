@@ -55,10 +55,10 @@
             "otherEntityName": "productOrder",
             "otherEntityRelationshipName": "invoice",
             "relationshipName": "order",
-            "otherEntityField": "code"
+            "otherEntityField": "id"
         }
     ],
-    "changelogDate": "20190706094134",
+    "changelogDate": "20190706100432",
     "entityTableName": "invoice",
     "dto": "no",
     "pagination": "pagination",

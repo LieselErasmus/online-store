@@ -94,7 +94,7 @@
                     <label class="form-control-label" jhiTranslate="onlineApp.invoice.order" for="field_order">Order</label>
                     <select class="form-control" id="field_order" name="order" formControlName="order">
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="productOrderOption.id === editForm.get('order').value?.id ? editForm.get('order').value : productOrderOption" *ngFor="let productOrderOption of productorders; trackBy: trackProductOrderById">{{productOrderOption.code}}</option>
+                        <option [ngValue]="productOrderOption.id === editForm.get('order').value?.id ? editForm.get('order').value : productOrderOption" *ngFor="let productOrderOption of productorders; trackBy: trackProductOrderById">{{productOrderOption.id}}</option>
                     </select>
                 </div>
             </div>

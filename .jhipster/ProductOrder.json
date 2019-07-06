@@ -42,10 +42,10 @@
             "otherEntityName": "customer",
             "otherEntityRelationshipName": "order",
             "relationshipName": "customer",
-            "otherEntityField": "email"
+            "otherEntityField": "id"
         }
     ],
-    "changelogDate": "20190706094132",
+    "changelogDate": "20190706100430",
     "entityTableName": "product_order",
     "dto": "no",
     "pagination": "pagination",

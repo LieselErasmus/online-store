@@ -71,7 +71,7 @@
             "otherEntityName": "user",
             "otherEntityRelationshipName": "customer",
             "relationshipName": "user",
-            "otherEntityField": "login",
+            "otherEntityField": "id",
             "ownerSide": true
         },
         {
@@ -81,7 +81,7 @@
             "relationshipName": "order"
         }
     ],
-    "changelogDate": "20190706094131",
+    "changelogDate": "20190706100429",
     "entityTableName": "customer",
     "dto": "no",
     "pagination": "pagination",

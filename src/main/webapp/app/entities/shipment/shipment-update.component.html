@@ -40,7 +40,7 @@
                     <label class="form-control-label" jhiTranslate="onlineApp.shipment.invoice" for="field_invoice">Invoice</label>
                     <select class="form-control" id="field_invoice" name="invoice" formControlName="invoice">
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="invoiceOption.id === editForm.get('invoice').value?.id ? editForm.get('invoice').value : invoiceOption" *ngFor="let invoiceOption of invoices; trackBy: trackInvoiceById">{{invoiceOption.code}}</option>
+                        <option [ngValue]="invoiceOption.id === editForm.get('invoice').value?.id ? editForm.get('invoice').value : invoiceOption" *ngFor="let invoiceOption of invoices; trackBy: trackInvoiceById">{{invoiceOption.id}}</option>
                     </select>
                 </div>
             </div>

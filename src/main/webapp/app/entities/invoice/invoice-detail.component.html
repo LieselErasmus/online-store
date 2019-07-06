@@ -32,7 +32,7 @@
                 <dt><span jhiTranslate="onlineApp.invoice.order">Order</span></dt>
                 <dd>
                     <div *ngIf="invoice.order">
-                        <a [routerLink]="['/product-order', invoice.order?.id, 'view']">{{invoice.order?.code}}</a>
+                        <a [routerLink]="['/product-order', invoice.order?.id, 'view']">{{invoice.order?.id}}</a>
                     </div>
                 </dd>
             </dl>

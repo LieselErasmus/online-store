@@ -66,14 +66,14 @@
                     <label class="form-control-label" jhiTranslate="onlineApp.orderItem.product" for="field_product">Product</label>
                     <select class="form-control" id="field_product" name="product" formControlName="product">
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="productOption.id === editForm.get('product').value?.id ? editForm.get('product').value : productOption" *ngFor="let productOption of products; trackBy: trackProductById">{{productOption.name}}</option>
+                        <option [ngValue]="productOption.id === editForm.get('product').value?.id ? editForm.get('product').value : productOption" *ngFor="let productOption of products; trackBy: trackProductById">{{productOption.id}}</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="onlineApp.orderItem.order" for="field_order">Order</label>
                     <select class="form-control" id="field_order" name="order" formControlName="order">
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="productOrderOption.id === editForm.get('order').value?.id ? editForm.get('order').value : productOrderOption" *ngFor="let productOrderOption of productorders; trackBy: trackProductOrderById">{{productOrderOption.code}}</option>
+                        <option [ngValue]="productOrderOption.id === editForm.get('order').value?.id ? editForm.get('order').value : productOrderOption" *ngFor="let productOrderOption of productorders; trackBy: trackProductOrderById">{{productOrderOption.id}}</option>
                     </select>
                 </div>
             </div>

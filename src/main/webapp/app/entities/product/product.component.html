@@ -23,7 +23,7 @@
             <th jhiSortBy="price"><span jhiTranslate="onlineApp.product.price">Price</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="size"><span jhiTranslate="onlineApp.product.size">Size</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="image"><span jhiTranslate="onlineApp.product.image">Image</span> <fa-icon [icon]="'sort'"></fa-icon></th>
-            <th jhiSortBy="productCategory.name"><span jhiTranslate="onlineApp.product.productCategory">Product Category</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="productCategory.id"><span jhiTranslate="onlineApp.product.productCategory">Product Category</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th></th>
             </tr>
             </thead>
@@ -42,7 +42,7 @@
                 </td>
                 <td>
                     <div *ngIf="product.productCategory">
-                        <a [routerLink]="['../product-category', product.productCategory?.id, 'view' ]" >{{product.productCategory?.name}}</a>
+                        <a [routerLink]="['../product-category', product.productCategory?.id, 'view' ]" >{{product.productCategory?.id}}</a>
                     </div>
                 </td>
                 <td class="text-right">

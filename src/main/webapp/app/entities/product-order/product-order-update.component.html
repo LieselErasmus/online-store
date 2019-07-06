@@ -55,7 +55,7 @@
                     <label class="form-control-label" jhiTranslate="onlineApp.productOrder.customer" for="field_customer">Customer</label>
                     <select class="form-control" id="field_customer" name="customer" formControlName="customer">
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="customerOption.id === editForm.get('customer').value?.id ? editForm.get('customer').value : customerOption" *ngFor="let customerOption of customers; trackBy: trackCustomerById">{{customerOption.email}}</option>
+                        <option [ngValue]="customerOption.id === editForm.get('customer').value?.id ? editForm.get('customer').value : customerOption" *ngFor="let customerOption of customers; trackBy: trackCustomerById">{{customerOption.id}}</option>
                     </select>
                 </div>
             </div>

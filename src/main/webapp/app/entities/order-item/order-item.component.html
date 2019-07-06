@@ -21,8 +21,8 @@
             <th jhiSortBy="quantity"><span jhiTranslate="onlineApp.orderItem.quantity">Quantity</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="totalPrice"><span jhiTranslate="onlineApp.orderItem.totalPrice">Total Price</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="status"><span jhiTranslate="onlineApp.orderItem.status">Status</span> <fa-icon [icon]="'sort'"></fa-icon></th>
-            <th jhiSortBy="product.name"><span jhiTranslate="onlineApp.orderItem.product">Product</span> <fa-icon [icon]="'sort'"></fa-icon></th>
-            <th jhiSortBy="order.code"><span jhiTranslate="onlineApp.orderItem.order">Order</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="product.id"><span jhiTranslate="onlineApp.orderItem.product">Product</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="order.id"><span jhiTranslate="onlineApp.orderItem.order">Order</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th></th>
             </tr>
             </thead>
@@ -34,12 +34,12 @@
                 <td jhiTranslate="{{'onlineApp.OrderItemStatus.' + orderItem.status}}">{{orderItem.status}}</td>
                 <td>
                     <div *ngIf="orderItem.product">
-                        <a [routerLink]="['../product', orderItem.product?.id, 'view' ]" >{{orderItem.product?.name}}</a>
+                        <a [routerLink]="['../product', orderItem.product?.id, 'view' ]" >{{orderItem.product?.id}}</a>
                     </div>
                 </td>
                 <td>
                     <div *ngIf="orderItem.order">
-                        <a [routerLink]="['../product-order', orderItem.order?.id, 'view' ]" >{{orderItem.order?.code}}</a>
+                        <a [routerLink]="['../product-order', orderItem.order?.id, 'view' ]" >{{orderItem.order?.id}}</a>
                     </div>
                 </td>
                 <td class="text-right">

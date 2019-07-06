@@ -41,10 +41,10 @@
             "otherEntityName": "productCategory",
             "otherEntityRelationshipName": "product",
             "relationshipName": "productCategory",
-            "otherEntityField": "name"
+            "otherEntityField": "id"
         }
     ],
-    "changelogDate": "20190706094129",
+    "changelogDate": "20190706100427",
     "javadoc": "Product sold by the Online store",
     "entityTableName": "product",
     "dto": "no",

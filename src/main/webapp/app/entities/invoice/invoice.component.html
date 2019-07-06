@@ -24,7 +24,7 @@
             <th jhiSortBy="paymentMethod"><span jhiTranslate="onlineApp.invoice.paymentMethod">Payment Method</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="paymentDate"><span jhiTranslate="onlineApp.invoice.paymentDate">Payment Date</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="paymentAmount"><span jhiTranslate="onlineApp.invoice.paymentAmount">Payment Amount</span> <fa-icon [icon]="'sort'"></fa-icon></th>
-            <th jhiSortBy="order.code"><span jhiTranslate="onlineApp.invoice.order">Order</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="order.id"><span jhiTranslate="onlineApp.invoice.order">Order</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th></th>
             </tr>
             </thead>
@@ -39,7 +39,7 @@
                 <td>{{invoice.paymentAmount}}</td>
                 <td>
                     <div *ngIf="invoice.order">
-                        <a [routerLink]="['../product-order', invoice.order?.id, 'view' ]" >{{invoice.order?.code}}</a>
+                        <a [routerLink]="['../product-order', invoice.order?.id, 'view' ]" >{{invoice.order?.id}}</a>
                     </div>
                 </td>
                 <td class="text-right">

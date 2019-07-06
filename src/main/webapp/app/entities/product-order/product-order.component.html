@@ -21,7 +21,7 @@
             <th jhiSortBy="placedDate"><span jhiTranslate="onlineApp.productOrder.placedDate">Placed Date</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="status"><span jhiTranslate="onlineApp.productOrder.status">Status</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="code"><span jhiTranslate="onlineApp.productOrder.code">Code</span> <fa-icon [icon]="'sort'"></fa-icon></th>
-            <th jhiSortBy="customer.email"><span jhiTranslate="onlineApp.productOrder.customer">Customer</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="customer.id"><span jhiTranslate="onlineApp.productOrder.customer">Customer</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th></th>
             </tr>
             </thead>
@@ -33,7 +33,7 @@
                 <td>{{productOrder.code}}</td>
                 <td>
                     <div *ngIf="productOrder.customer">
-                        <a [routerLink]="['../customer', productOrder.customer?.id, 'view' ]" >{{productOrder.customer?.email}}</a>
+                        <a [routerLink]="['../customer', productOrder.customer?.id, 'view' ]" >{{productOrder.customer?.id}}</a>
                     </div>
                 </td>
                 <td class="text-right">
